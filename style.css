@@ -1,7 +1,8 @@
 :root {
-  --firts-color: rgb(133, 74, 179);
+  --first-color: rgb(133, 74, 179);
   --second-color: lightgray;
   --black-color: #000;
+  --white-color: #fff;
 }
 
 :root {
@@ -60,7 +61,7 @@ a {
   left: 0;
   width: 56px;
   height: 100vh;
-  background: var(--firts-color);
+  background: var(--first-color);
   padding: 1.25rem 0.5rem 2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -122,12 +123,12 @@ a {
   position: absolute;
   top: 1.6rem;
   right: -0.6rem;
-  width: 18px;
-  height: 18px;
-  background-color: darkgray;
+  width: 20px;
+  height: 20px;
+  background-color: black;
   border-radius: 50%;
-  font-size: 1.25rem;
-  color: var(--first-color);
+  font-size: 1rem;
+  color: var(--white-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +175,7 @@ a {
 
 .active {
   background-color: #fff;
-  color: var(--first-color);
+  color: var(--black-color);
 }
 
 .expander {

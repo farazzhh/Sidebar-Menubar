@@ -2,9 +2,10 @@ $nav-width: 56px;
 $font-bold: 700;
 
 :root {
-  --firts-color: rgb(133, 74, 179);
+  --first-color: rgb(133, 74, 179);
   --second-color: lightgray;
   --black-color: #000;
+  --white-color: #fff;
 }
 
 :root {
@@ -58,7 +59,7 @@ a {
   left: 0;
   width: $nav-width;
   height: 100vh;
-  background: var(--firts-color);
+  background: var(--first-color);
   padding: 1.25rem 0.5rem 2rem;
   transition: 0.5s;
   z-index: var(--z-fixed);
@@ -106,12 +107,12 @@ a {
     position: absolute;
     top: 1.6rem;
     right: -0.6rem;
-    width: 18px;
-    height: 18px;
-    background-color: darkgray;
+    width: 20px;
+    height: 20px;
+    background-color: black;
     border-radius: 50%;
-    font-size: 1.25rem;
-    color: var(--first-color);
+    font-size: 1rem;
+    color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +130,6 @@ a {
     transition: 0.3s;
     &:hover {
       background-color: var(--second-color);
-      // color: var(--black-color);
     }
   }
 }
@@ -143,7 +143,7 @@ a {
 }
 .active {
   background-color: #fff;
-  color: var(--first-color);
+  color: var(--black-color);
 }
 .expander {
   padding: 1rem 0 0 12rem;
