@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SideBar</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/255ad2b1cd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,11 +15,9 @@
     <div class="l-navbar" id="navbar">
         <nav class="nav">
             <div>
-                <a class="nav__logo" href="#">
-                    <!-- <div class="nav__icon_wrap"> -->
-                        <i class="fas fa-desktop nav__logo-icon"></i>
-                    <!-- </div> -->
-                    <span class="nav__logo-text">C.I.C</span>
+                <a class="nav__logo" href="#" >
+                    <i class="fas fa-desktop nav__logo-icon"></i>
+                    <span class="nav__logo-text logo">C.I.C</span>
                 </a>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fas fa-chevron-right"></i>
@@ -31,10 +30,8 @@
                         <span class="nav__text">Home</span>
                     </a>
                     <a href="#" class="nav__link ">
-                        <div class="nav__icon_wrap">
-                            <i class="fas fa-user nav__icon"></i>
-                        </div>
-                        <span class="nav__text">User</span>
+                        <div class="nav__icon_wrap"><i class="fas fa-user nav__icon"></i></div><span
+                            class="nav__text">User</span>
                     </a>
                     <a href="#" class="nav__link ">
                         <div class="nav__icon_wrap">
@@ -71,11 +68,8 @@
             </a>
         </nav>
     </div>
-    <div class="mainsection">
-        <h2>Faraz Profile</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis, in laudantium sequi rem
-            quidem dolore recusandae officia harum esse sit eos voluptates doloremque unde mollitia dignissimos eveniet
-            repellat. Enim.</p>
+    <div id="mainsection">
+
     </div>
 
     <script src="./app.js"></script>
