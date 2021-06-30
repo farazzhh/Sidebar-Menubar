@@ -1,4 +1,8 @@
 # Sidebar-Menubar
-sidebar-menuabar with toggle properties
 
-change body content without page rafreshing or sidebar refreshing
+build project with HTML SASS JS
+dont forget to active watch Sass 🤓
+
+sidebar-menuabar with toggle properties (Expand & hide)
+
+change and Load content of Container without page or sidebar refreshing with Jquery
