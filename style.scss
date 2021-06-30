@@ -1,0 +1,154 @@
+$nav-width: 56px;
+$font-bold: 700;
+
+:root {
+  --firts-color: #12192c;
+  --second-color: #f5a623;
+  --white-color: #ededed;
+}
+
+:root {
+  --body-font: "Quicksand", sans-serif;
+  --small-font-size: 0.875rem;
+  @media screen and (max-width: 768px) {
+    --small-font-size: 0.938rem;
+  }
+}
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixes: 100;
+  --z-modal: 1000;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 1rem 0 0 5rem;
+  font-family: var(--body-font);
+  transition: 0.5s;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-width;
+  height: 100vh;
+  background: var(--firts-color);
+  padding: 1.25rem 0.5rem 2rem;
+  transition: 0.5s;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &__icon {
+    font-size: 1.5rem;
+    // margin-right: 1rem;
+
+    &_wrap{
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.2rem;
+    }
+  }
+
+  &__text {
+    font-weight: $font-bold;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+
+    &-icon {
+      margin-right: 1.2rem;
+      color: var(--white-color);
+    }
+
+    &-text {
+      color: var(--white-color);
+      font-weight: $font-bold;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 1.1rem;
+    right: -0.6rem;
+    width: 18px;
+    height: 18px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    transition: 0.3s;
+    &:hover {
+      background-color: var(--second-color);
+      color: var(--firts-color);
+    }
+  }
+}
+
+.show {
+  width: $nav-width + 112px;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.active {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+.expander {
+  padding: 1rem 0 0 12rem;
+  transition: 0.5s;
+}
